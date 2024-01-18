@@ -1,7 +1,7 @@
 ---
-title: "AI chapter-2"
-date: 2023-11-04T21:55:57+05:30
-draft: false
+title: "AI Basics"
+subtitle: "AI Basic jargons to get started"
+date: "2024-01-18"
 ---
 # Knowledge, Reasoning & Planning
 
