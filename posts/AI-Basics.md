@@ -1,6 +1,6 @@
 ---
 title: "AI Basics"
-subtitle: "AI Basic jargons to get started"
+subtitle: "AI Basic jargons"
 date: "2024-01-18"
 ---
 # Knowledge, Reasoning & Planning
