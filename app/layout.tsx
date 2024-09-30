@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
 
   const header = (
-    <header className="text-center bg-sky-950 bg-opacity-60 p-2 my-4 rounded-md ">
+    <header className="text-center bg-black bg-opacity-100 p-2 my-4 rounded-md ">
       <div className="flex flex-row">
         <div className="my-auto">
           <Image src="/author.png" alt="image" width={90} height={90}></Image>
@@ -103,14 +103,14 @@ export default function RootLayout({
 
       </div>
       <div className="border-t border-slate-800 bg-opacity-40 mt-6 py-6  text-slate-600 text-center">
-        <h3>Designed by Ash</h3>
+        <h3>Designed by Quadeer</h3>
       </div>
     </footer>
   );
 
   return (
     <html lang="en">
-      <body className="bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
+      <body className="bg-hero bg-no-repeat bg-cover bg-center bg-fixed backdrop-blur-0 bg-opacity-65 will-change-transform transform-gpu">
         <div className="flex">
           <FileTreeSidebar />
           <div className="mx-auto max-w-3xl px-6 flex-grow">

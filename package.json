@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/autocomplete": "^6.18.1",
+    "@codemirror/lang-cpp": "^6.0.2",
+    "@replit/codemirror-vim": "^6.2.1",
+    "@uiw/react-codemirror": "^4.23.3",
     "ace-builds": "^1.36.2",
     "codemirror": "^5.65.18",
     "fs": "^0.0.1-security",
