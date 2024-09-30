@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ace-builds": "^1.36.2",
+    "codemirror": "^5.65.18",
+    "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.4.0",
     "next": "14.0.4",
     "react": "^18",
+    "react-ace": "^12.0.0",
+    "react-codemirror2": "^8.0.0",
     "react-dom": "^18"
   },
   "devDependencies": {

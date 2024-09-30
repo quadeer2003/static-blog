@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { PostMetadata } from "./PostMetadata";
+import { ProjectMetadata } from "./ProjectMetadata";
 
-const PostPreview = ({ title, date, slug, tags = [] }: { title: string, date: string, slug: string, tags?: string[] }) => {
+const ProjectPreview = ({ title, date, slug, tags = [] }: { title: string, date: string, slug: string, tags?: string[] }) => {
     return (
         <div className="border rounded p-4">
-            <Link href={`/posts/${slug}`}>
+            <Link href={`/projects/${slug}`}>
                 <h2 className="text-xl font-bold">{title}</h2>
             </Link>
             <p className="text-gray-500">{date}</p>
@@ -19,4 +19,4 @@ const PostPreview = ({ title, date, slug, tags = [] }: { title: string, date: st
     );
 };
 
-export default PostPreview;
+export default ProjectPreview;
