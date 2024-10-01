@@ -3,12 +3,12 @@ import matter from "gray-matter";
 import { ProjectMetadata } from "../components/ProjectMetadata";
 
 const getProjectMetadata = (): ProjectMetadata[] => {
-    const folder = "projects/";
+    const folder = "content/projects/";
     const files = fs.readdirSync(folder);
     const markdownProjects = files.filter((file) => file.endsWith(".md"));
 
     const projects = markdownProjects.map((fileName) => {
-        const fileContents = fs.readFileSync(`projects/${fileName}`, "utf8");
+        const fileContents = fs.readFileSync(`content/projects/${fileName}`, "utf8");
         const matterResult = matter(fileContents);
         return {
             title: matterResult.data.title,

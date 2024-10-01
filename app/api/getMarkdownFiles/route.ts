@@ -4,7 +4,8 @@ import fs from 'fs';
 import path from 'path';
 
 const getMarkdownFiles = (folder: string) => {
-    const directoryPath = path.join(process.cwd(), folder);
+    const contentDirectory = process.env.CONTENT_DIRECTORY || 'content';
+    const directoryPath = path.join(process.cwd(), contentDirectory, folder);
     const filenames = fs.readdirSync(directoryPath);
     return filenames.filter((file) => file.endsWith('.md'));
 };
@@ -20,6 +21,7 @@ export async function GET(request: Request) {
         const files = getMarkdownFiles(folder);
         return NextResponse.json(files);
     } catch (error) {
+        console.error('Error reading directory:', error);
         return NextResponse.json({ error: 'Failed to read files' }, { status: 500 });
     }
 }
