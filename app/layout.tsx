@@ -14,10 +14,10 @@ export default function RootLayout({
 }) {
 
   const header = (
-    <header className="text-center bg-black bg-opacity-100 p-2 my-4 rounded-md ">
+    <header className="text-center border border-white/20 bg-black bg-opacity-90 backdrop-blur-lg shadow-xl p-2 my-4 rounded-lg ">
       <div className="flex flex-row">
         <div className="my-auto">
-          <Image src="/author.png" alt="image" width={90} height={90}></Image>
+          <Image className="rounded-md" src="/author.jpeg" alt="image" width={90} height={90}></Image>
         </div>
 
         <div className="mx-auto my-auto">
@@ -111,16 +111,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-hero bg-no-repeat bg-cover bg-center bg-fixed backdrop-blur-0 bg-opacity-65 will-change-transform transform-gpu">
-        <div className="flex">
+        {/* <div className="flex"> */}
           <FileTreeSidebar />
-          <div className="mx-auto max-w-3xl px-6 flex-grow">
+          <div className="mx-auto max-w-3xl px-6">
             {header}
-            <div className="flex">
+            {/* <div className="flex"> */}
               {children}
-            </div>
+            {/* </div> */}
             {footer}
           </div>
-        </div>
+        {/* </div>` */}
       </body>
     </html>
   );

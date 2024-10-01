@@ -11,7 +11,10 @@ tags: ["quadeer","j"]
 ### Knowledge-Based Agent
 
 - A **knowledge-based agent** is a sophisticated system designed to utilize knowledge for decision-making and problem-solving.
-
+```shell
+git config --global 
+git config --global user.email 
+```
 - Components:
   - **Knowledge Base (KB)**: A repository of information about the world, often represented in a formal language.
   

@@ -218,7 +218,7 @@ const Home = () => {
                     <div className="w-3 h-3 bg-yellow-500 rounded-full cursor-pointer" title="Minimize"></div>
                     <div className="w-3 h-3 bg-green-500 rounded-full cursor-pointer" title="Maximize"></div>
                     <div className="flex-grow"></div>
-                    <div className="text-white text-sm px-4">Quadeer.dmskrose</div>
+                    <div className="text-white text-sm px-4">Terminal</div>
                   </div>
     
                   <div
