@@ -8,15 +8,27 @@ const FileTreeSidebar = () => {
     const [isProjectsOpen, setIsProjectsOpen] = useState(false);
     const [postFiles, setPostFiles] = useState<string[]>([]);
     const [projectFiles, setProjectFiles] = useState<string[]>([]);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchFiles = async () => {
-            const postsResponse = await fetch('/api/getMarkdownFiles?folder=posts');
-            const projectsResponse = await fetch('/api/getMarkdownFiles?folder=projects');
-            const posts = await postsResponse.json();
-            const projects = await projectsResponse.json();
-            setPostFiles(posts);
-            setProjectFiles(projects);
+            try {
+                const postsResponse = await fetch('/api/getMarkdownFiles?folder=posts');
+                const projectsResponse = await fetch('/api/getMarkdownFiles?folder=projects');
+                if (!postsResponse.ok || !projectsResponse.ok) {
+                    throw new Error('Failed to fetch files');
+                }
+                const posts = await postsResponse.json();
+                const projects = await projectsResponse.json();
+                if (!Array.isArray(posts) || !Array.isArray(projects)) {
+                    throw new Error('Invalid response format');
+                }
+                setPostFiles(posts);
+                setProjectFiles(projects);
+            } catch (err) {
+                console.error('Error fetching files:', err);
+                setError('Failed to load files');
+            }
         };
 
         fetchFiles();
@@ -32,8 +44,12 @@ const FileTreeSidebar = () => {
         }
     };
 
+    if (error) {
+        return <div className="text-red-500">{error}</div>;
+    }
+
     return (
-        <div className="hidden lg:block w-64  text-black p-4 fixed h-full bg-opacity-15">
+        <div className="hidden lg:block w-64 text-black p-4 fixed h-full bg-opacity-15">
             <h2 className="text-xl font-bold mb-4">File Tree</h2>
             <div>
                 <div className="flex items-center">
