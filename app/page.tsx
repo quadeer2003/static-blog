@@ -21,13 +21,13 @@ const HomePage = () => {
     return (
         <div className="flex">
             {/* <FileTreeSidebar /> */}
-            <div className="flex-grow p-4">
+            <div className="flex-grow p-0">
                 <TerminalBlock />
-                <h1 className="text-3xl font-bold mb-4">Posts</h1>
+                <h1 id="posts" className="text-3xl font-bold mb-4">Posts</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
                     {postPreviews}
                 </div>
-                <h1 className="text-3xl font-bold mb-4">Projects</h1>
+                <h1 id="projects" className="text-3xl font-bold mb-4">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     {projectPreviews}
                 </div>

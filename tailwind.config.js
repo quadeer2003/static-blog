@@ -14,6 +14,10 @@ module.exports = {
     extend: {
       backgroundImage:{
         'hero':"url('../public/images/hero.jpg')",
+        // 'hero':"bg",
+      },
+      backdropBlur: {
+        xs: '2px', // Custom blur value
       },
     },
   },
