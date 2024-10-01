@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import getProjectMetadata from "@/components/getProjectMetadata";
 
 const getProjectContent = (slug: string) => {
-    const folder = "projects/";
+    const folder = "content/projects/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
     const matterResult = matter(content);
