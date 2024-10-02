@@ -3,7 +3,7 @@ import { ProjectMetadata } from "./ProjectMetadata";
 
 const ProjectPreview = ({ title, date, slug, tags = [] }: { title: string, date: string, slug: string, tags?: string[] }) => {
     return (
-        <div className="border rounded p-4">
+        <div className="border border-white/20 rounded-lg p-4 bg-white bg-opacity-20 backdrop-blur-lg shadow-xl">
             <Link href={`/projects/${slug}`}>
                 <h2 className="text-xl font-bold">{title}</h2>
             </Link>

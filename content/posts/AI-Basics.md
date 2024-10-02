@@ -2,123 +2,135 @@
 title: "AI Basics"
 subtitle: "AI Basic jargons"
 date: "2024-01-18"
-tags: ["quadeer","j"]
+tags: ["AI"]
 ---
-# Knowledge, Reasoning & Planning
+# AI Buzzwords and Fundamentals
 
-## Reasoning
+## Table of Contents
+1. [Introduction to AI](#1-introduction-to-ai)
+2. [Machine Learning (ML)](#2-machine-learning-ml)
+3. [Deep Learning (DL)](#3-deep-learning-dl)
+4. [Neural Networks](#4-neural-networks)
+5. [Natural Language Processing (NLP)](#5-natural-language-processing-nlp)
+6. [Computer Vision (CV)](#6-computer-vision-cv)
+7. [Reinforcement Learning (RL)](#7-reinforcement-learning-rl)
+8. [Supervised Learning](#8-supervised-learning)
+9. [Unsupervised Learning](#9-unsupervised-learning)
+10. [AI Ethics](#10-ai-ethics)
+11. [AI Bias](#11-ai-bias)
+12. [Explainability](#12-explainability)
+13. [Edge AI](#13-edge-ai)
+14. [Federated Learning](#14-federated-learning)
+15. [Transfer Learning](#15-transfer-learning)
 
-### Knowledge-Based Agent
+---
 
-- A **knowledge-based agent** is a sophisticated system designed to utilize knowledge for decision-making and problem-solving.
-```shell
-git config --global 
-git config --global user.email 
-```
-- Components:
-  - **Knowledge Base (KB)**: A repository of information about the world, often represented in a formal language.
-  
-  - **Inference Engine**: Processes information from the knowledge base to draw conclusions and make decisions.
-  
-  - **Sensors**: Collect data from the environment.
-  
-  - **Actuators**: Execute actions based on conclusions drawn.
+## 1. Introduction to AI
+**Artificial Intelligence (AI)** is the simulation of human intelligence in machines programmed to think, learn, and perform tasks that typically require human intelligence.
 
-- Reasoning techniques include logical and probabilistic reasoning.
+---
 
-### Propositional Logic
+## 2. Machine Learning (ML)
+**Machine Learning** is a subset of AI where algorithms learn from data to make predictions or decisions without explicit programming.
 
-- **Propositional logic** deals with propositions, which are statements that are either true or false.
+- **Algorithms:** Logistic Regression, Decision Trees, SVM, KNN, etc.
+- **Key Term:** Model Training
 
-- Variables represent propositions, and logical connectives (AND, OR, NOT) are used to form compound propositions.
+---
 
-- Propositional logic is suitable for expressing relationships and conditions in a simple, binary manner.
+## 3. Deep Learning (DL)
+**Deep Learning** is a type of ML involving neural networks with multiple layers (hence "deep"). It excels in tasks like image and speech recognition.
 
-### Inference
+- **Key Term:** Neural Network Layers, Backpropagation
 
-- **Inference** is the process of deriving new information from existing knowledge.
+---
 
-- In propositional logic, inference can involve both deduction and induction.
+## 4. Neural Networks
+**Neural Networks** are computational models inspired by the human brain. They consist of interconnected nodes (neurons) organized in layers.
 
-- **Deductive inference** derives conclusions that must be true if the premises are true, based on logical rules.
+- **Types:** Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs)
 
-- **Inductive inference** involves making generalizations based on patterns observed in specific examples.
+---
 
-### Predicate Logic (First Order Logic)
+## 5. Natural Language Processing (NLP)
+**NLP** focuses on enabling machines to understand, interpret, and respond to human language.
 
-- **Predicate logic**, or first-order logic, extends propositional logic by introducing variables, quantifiers, and predicates.
+- **Applications:** Chatbots, Language Translation, Sentiment Analysis
+- **Key Terms:** Tokenization, Lemmatization, BERT, GPT
 
-- Variables represent objects, quantifiers (existential and universal) specify the scope of variables, and predicates represent relationships.
+---
 
-- It allows for a more expressive representation of knowledge and is commonly used in AI.
+## 6. Computer Vision (CV)
+**Computer Vision** allows machines to interpret and make decisions based on visual data like images or videos.
 
-### Resolution
+- **Applications:** Face Recognition, Object Detection
+- **Key Terms:** Convolutional Neural Networks (CNNs), Image Segmentation
 
-- **Resolution** is a logical inference technique in predicate logic.
+---
 
-- It involves the resolution rule, which eliminates redundant clauses and facilitates the derivation of new clauses.
+## 7. Reinforcement Learning (RL)
+**Reinforcement Learning** is a type of learning where an agent learns to make decisions by interacting with an environment and receiving rewards or penalties.
 
-- Resolution is a foundational step in automated theorem proving and logical reasoning.
+- **Key Terms:** Agent, Reward, Policy, Q-Learning
 
-## Structured Knowledge Representation
+---
 
-### Frames
+## 8. Supervised Learning
+**Supervised Learning** involves training a model on labeled data, meaning the input comes with corresponding outputs (labels).
 
-- **Frames** provide a structured way to represent knowledge about objects and concepts.
+- **Examples:** Classification, Regression
+- **Key Terms:** Training Data, Test Data
 
-- A frame consists of slots (attributes) and values associated with those slots.
+---
 
-- Frames are used for organizing and representing complex, hierarchical relationships.
+## 9. Unsupervised Learning
+**Unsupervised Learning** involves models learning patterns and structures from data without labeled outcomes.
 
-### Semantic Nets
+- **Examples:** Clustering, Dimensionality Reduction
+- **Key Terms:** K-Means, PCA
 
-- **Semantic nets**, or semantic networks, offer a graphical representation of knowledge using nodes and links.
+---
 
-- Nodes represent concepts, and links represent relationships between concepts.
+## 10. AI Ethics
+**AI Ethics** addresses the moral challenges and societal impacts of AI technology, such as privacy, fairness, and accountability.
 
-- Semantic nets provide a visual and intuitive representation of semantic relationships.
+- **Key Topics:** Privacy, Autonomy, Responsible AI
 
-## Planning
+---
 
-### A Simple Planning Agent
+## 11. AI Bias
+**AI Bias** refers to systematic errors in AI models that lead to unfair outcomes based on race, gender, or other group attributes.
 
-- A **planning agent** formulates and executes plans to achieve specific goals.
+- **Key Terms:** Data Bias, Fairness
 
-- Components include:
-  - **Goal formulation**: Defining the desired outcome.
-  
-  - **Problem formulation**: Representing the initial state, goal state, and possible actions.
-  
-  - **Search for a solution**: Exploring the state space to find a sequence of actions from the initial to the goal state.
+---
 
-### From Problem Solving to Planning
+## 12. Explainability
+**Explainability** is the concept of making AI models transparent, so humans can understand how decisions are made.
 
-- Planning involves reasoning about actions and their consequences to achieve goals.
+- **Key Terms:** Interpretability, Black-box Models
 
-- In contrast to problem-solving agents, planning agents operate in dynamic environments with changing states.
+---
 
-- Planning requires generating action sequences that transform an initial state into a desired goal state.
+## 13. Edge AI
+**Edge AI** involves deploying AI models locally on devices (like smartphones), reducing the need for constant communication with central servers.
 
-### Basic Representation of Plans
+- **Key Applications:** IoT, Real-time Processing
 
-- **Plans** are representations of sequences of actions or steps that an agent can execute to achieve a goal.
+---
 
-- Plans can be represented as lists of actions or in a structured format.
+## 14. Federated Learning
+**Federated Learning** allows AI models to be trained across multiple devices or servers while keeping the data decentralized and private.
 
-- A complete and feasible plan is necessary for achieving goals in dynamic environments.
+- **Key Terms:** Privacy, Decentralization
 
-### Partial Order Planning
+---
 
-- **Partial Order Planning** allows for flexibility in the execution order of actions.
+## 15. Transfer Learning
+**Transfer Learning** involves applying knowledge gained from one task to a different but related task, reducing the need for large datasets.
 
-- Instead of a strict linear order, actions are partially ordered based on dependencies and constraints.
+- **Key Applications:** Pretrained Models, Fine-Tuning
 
-- Partial Order Planning is valuable in environments with uncertain action effects.
+---
 
-### Hierarchical Planning
-
-- **Hierarchical Planning** organizes plans into hierarchies with subgoals and subplans.
-
-- Subgoals are intermediate objectives contributing to the overall goal.
-
-- Hierarchical Planning simplifies the representation of complex plans.
+*End of Document*

@@ -10,7 +10,7 @@ const PostPreview = ({ title, date, slug, tags = [] }: { title: string, date: st
             <p className="text-gray-500">{date}</p>
             <div className="flex flex-wrap gap-2 my-2">
                 {tags.map((tag: string) => (
-                    <span key={tag} className="bg-gray-200 text-gray-700 px-2 py-1 rounded">
+                    <span key={tag} className="border border-white/25 bg-cyan-400 rounded-lg bg-opacity-35 shadow-xl  text-gray-700 px-2 py-1">
                         {tag}
                     </span>
                 ))}

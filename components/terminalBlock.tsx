@@ -59,11 +59,12 @@ const customCompletion = autocompletion({
 
 const commands = [
   "help",
-  "about",
+  "about me",
   "projects",
   "contact",
   "clear",
-  "vim"
+  "vim",
+  "education"
 ];
 
 const Home = () => {
@@ -101,6 +102,7 @@ const Home = () => {
       setInput(e.target.value);
       setShowHelpMessage(e.target.value === "");
     };
+    
   
     const processCommand = (command: string) => {
       if (command === "clear") {
@@ -110,7 +112,7 @@ const Home = () => {
       } else {
         setOutput((prevOutput) => [
           ...prevOutput,
-          `quadeer@pc:~$ ${command}`,
+          `<span class="text-blue-400">quadeer@pc:~$</span> ${command}`,
           ...handleCommand(command),
         ]);
       }
@@ -119,21 +121,44 @@ const Home = () => {
     const handleCommand = (command: string) => {
       switch (command) {
         case "help":
-          return [
+            return [
             "Available commands:",
-            ' <span style="color:green">vim</span> :     Enter Vim mode to code',
-            ' <span style="color:green">help</span> :     Show this help message',
-            ' <span style="color:green">about</span> :    Learn more about me',
-            ' <span style="color:green">projects</span> : See my projects',
-            ' <span style="color:green">contact</span> :  Get in touch',
-            ' <span style="color:green">clear</span> :  Clear screen',
-          ];
-        case "about":
-          return ["I am a Linux enthusiast with a passion for AI/ML and a keen interest in cybersecurity."];
+            // ' <span style="color:lightgreen">help</span> :     Show this help message',
+            ' <span style="color:lightgreen">about me</span> :    Learn more about me',
+            ' <span style="color:lightgreen">education</span> :  Show my education details',
+            ' <span style="color:lightgreen">projects</span> : See my projects',
+            ' <span style="color:lightgreen">contact</span> :  Get in touch',
+            ' <span style="color:lightgreen">vim</span> :     Enter Vim mode to code',
+            ' <span style="color:lightgreen">clear</span> :  Clear screen',
+            ];
+        case "about me":
+            return [
+              `<span class="text-green-500">About Me:</span>`,
+              `<ul class="text-green-500 list-disc list-inside">`,
+              `<li>I'm <b>Mohammad Abdul Quadeer</b>, and I'm passionate about coding, web development, and emerging technologies.</li>`,
+              `<li>I'm currently a <b>CSE undergrad at MJCET</b>.</li>`,
+              `<li>Won <b><a href="https://www.linkedin.com/posts/quadeer03_mjcet-activity-7225160718545772544-hppu?utm_source=share&utm_medium=member_desktop" target="_blank" class="text-blue-200 underline">Innovatia Panoply 2024</a></b>, an exciting event organized by MJCET that showcased talent from the CSE department, featuring participation from over 85 teams</li>`,
+              `</ul>`,
+            ];
         case "projects":
-          return ["Project 1: Awesome Project", "Project 2: Another Cool Project"];
+            return [
+            'To view my projects, visit my <a href="https://github.com/quadeer2003" target="_blank" class="text-blue-200">GitHub</a>'
+            ];
         case "contact":
-          return ["Email: example@example.com", "LinkedIn: linkedin.com/in/example"];
+            return [
+            'Email: <a href="mailto:quadeer2003@gmail.com" class="text-blue-200">quadeer2003@gmail.com</a>',
+            'LinkedIn: <a href="https://linkedin.com/in/quadeer03" target="_blank" class="text-blue-200">linkedin.com/in/quadeer03</a>',
+            'GitHub: <a href="https://github.com/quadeer2003" target="_blank" class="text-blue-200">github.com/quadeer2003</a>'
+            ];
+          case "education":
+            return [
+              `<span class="text-green-500">Education:</span>`,
+              `<ul class="text-green-500 list-disc list-inside">`,
+              `<li>Matrusri Entrepreneurs and Leaders School with a GPA of 9.7</li>`,
+              `<li>Intermediate at 9 Education with 91% percentage</li>`,
+              `<li>Currently at MJCET with a GPA of 8.35</li>`,
+              `</ul>`,
+            ];
         default:
           return [`'${command.replace(/'/g, "&#39;")}' is not recognized as a valid command. Type 'help' to see available commands.`];
       }
@@ -223,17 +248,13 @@ const Home = () => {
     
                   <div
                     ref={terminalRef}
-                    className="p-4 h-[370px] overflow-y-auto bg-gray-900 bg-opacity-70 rounded-b-lg"
+                    className="p-4 h-[370px] overflow-y-auto bg-gray-900 bg-opacity-90 rounded-b-lg"
                     onKeyDown={handleVimKeyDown}
                     tabIndex={0}
                   >
                     <div className="text-white">
-                        <ol type="1">
-                            <li>Hey, I'm <b>Mohd Abdul Quadeer</b>, a CSE undergrad at MJCET.</li>
-                            <li>Passionate about coding, web development, and emerging technologies</li>
-                            <li>Currently working with the <b>MERN</b> stack to build full-stack web applications</li>
-                            <li></li>
-                        </ol>
+                        <p>Hey, I'm <b>Mohd Abdul Quadeer</b> and welcome to my terminal-like interface to explore more about me.</p>
+                        <p>Also, check out the <b>vim</b> command for on-the-go Vim editing.</p>
 
                     </div>
                     {/* <div className="mb-0">
