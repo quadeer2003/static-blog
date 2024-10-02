@@ -8,7 +8,7 @@ import getPostMetadata from "@/components/getPostMetadata";
 import ReactMarkdown from "react-markdown";
 
 const getPostContent = (slug: string) => {
-    const folder = "posts/";
+    const folder = "content/posts/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
     const matterResult = matter(content);
