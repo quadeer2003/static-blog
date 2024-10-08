@@ -1,0 +1,150 @@
+{
+  "main": {
+    "id": "4e8e59a0ecb15839",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5edd9b0484fff2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "586ec3b5c12901e5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1fe174b64e5c1f52",
+    "type": "split",
+    "children": [
+      {
+        "id": "497259a234b722d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1201293f708b7b38",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "70df74cb912f8bbb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "528007367d278602",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "98c1d716e3cdfee9",
+    "type": "split",
+    "children": [
+      {
+        "id": "e52f36df2420aff2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa133e0a4c8a2b11",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2e625c0c19c55082",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2563d6549ca086bb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "873a8984db8442fa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "586ec3b5c12901e5",
+  "lastOpenFiles": [
+    "AI-Basics.md",
+    "Basic-Aptitude.md",
+    "Git-guide.md",
+    "Linux-Basics.md",
+    "Vim-setup.md",
+    "2023-11-05.md"
+  ]
+}
