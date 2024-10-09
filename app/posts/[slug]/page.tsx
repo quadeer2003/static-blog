@@ -73,12 +73,12 @@ const PostPage = (props: any) => {
           p(props: React.HTMLAttributes<HTMLParagraphElement>) {
             return <p className="my-2">{props.children}</p>;
           },
-          ul(props: React.HTMLAttributes<HTMLUListElement>) {
-            return <ul className="list-disc list-inside my-2">{props.children}</ul>;
-          },
-          ol(props: React.HTMLAttributes<HTMLOListElement>) {
-            return <ol className="list-decimal list-inside my-2">{props.children}</ol>;
-          },
+            ul(props: React.HTMLAttributes<HTMLUListElement>) {
+              return <ul className="list-disc list-inside my-2">{props.children}</ul>;
+            },
+            ol(props: React.HTMLAttributes<HTMLOListElement>) {
+              return <ol className="list-decimal list-inside my-2">{props.children}</ol>;
+            },
           blockquote(props: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) {
             return <blockquote className="border-l-4 border-gray-300 pl-4 italic my-2" {...props}>{props.children}</blockquote>;
           },
