@@ -6,6 +6,13 @@ import FileTreeSidebar from "@/components/sidebar";
 export const metadata = {
   title: "Mohammad Abdul Quadeer",
   description: 'A minimalistic personal site',
+  openGraph: {
+    title: "Mohammad Abdul Quadeer",
+    description: "A minimalistic personal site",
+    type: "website",
+    url: "https://maquadeer.vercel.app",
+    image: "https://maquadeer.vercel.app/og.jpeg",
+  },
 }
 
 export default function RootLayout({
