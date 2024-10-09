@@ -2,6 +2,7 @@ import Link from "next/link";
 import "../styles/globals.css"
 import Image from "next/image";
 import FileTreeSidebar from "@/components/sidebar";
+import Head from "next/head";
 
 export const metadata = {
   title: "Mohammad Abdul Quadeer",
@@ -118,6 +119,15 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:image" content={metadata.openGraph.image} />
+      </Head>
       <body className="bg-hero bg-no-repeat bg-cover bg-center bg-fixed backdrop-blur-0 bg-opacity-65 will-change-transform transform-gpu">
         {/* <div className="flex"> */}
           <FileTreeSidebar />
