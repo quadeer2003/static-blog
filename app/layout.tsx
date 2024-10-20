@@ -1,8 +1,9 @@
 import Link from "next/link";
-import "../styles/globals.css"
+import "../styles/globals.css";
 import Image from "next/image";
 import FileTreeSidebar from "@/components/sidebar";
 import Head from "next/head";
+import ThemeToggle from "@/components/Themetoggle";
 
 export const metadata = {
   title: "Mohammad Abdul Quadeer",
@@ -14,7 +15,7 @@ export const metadata = {
     url: "https://maquadeer.vercel.app",
     image: "https://maquadeer.vercel.app/og.jpeg",
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -129,16 +130,13 @@ export default function RootLayout({
         <meta property="og:image" content={metadata.openGraph.image} />
       </Head>
       <body className="bg-hero bg-no-repeat bg-cover bg-center bg-fixed backdrop-blur-0 bg-opacity-65 will-change-transform transform-gpu">
-        {/* <div className="flex"> */}
-          <FileTreeSidebar />
-          <div className="mx-auto max-w-3xl px-6">
-            {header}
-            {/* <div className="flex"> */}
-              {children}
-            {/* </div> */}
-            {footer}
-          </div>
-        {/* </div>` */}
+        <FileTreeSidebar />
+        <div className="mx-auto max-w-3xl px-6">
+          {header}
+          {/* <ThemeToggle /> */}
+          {children}
+          {footer}
+        </div>
       </body>
     </html>
   );
