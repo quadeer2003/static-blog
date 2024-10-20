@@ -1,3 +1,4 @@
+// "use client";
 import PostPreview from '@/components/PostPreview';
 import ProjectPreview from '@/components/ProjectPreview';
 import getPostMetadata from '@/components/getPostMetadata';
@@ -5,6 +6,7 @@ import getProjectMetadata from '@/components/getProjectMetadata';
 import TerminalBlock from '@/components/terminalBlock';
 import FileTreeSidebar from '@/components/sidebar';
 import Link from 'next/link';
+import Hero from '@/components/Hero';
 
 const HomePage = () => {
     const postMetadata = getPostMetadata();
@@ -22,6 +24,7 @@ const HomePage = () => {
         <div className="flex">
             {/* <FileTreeSidebar /> */}
             <div className="flex-grow p-0">
+                <Hero/>
                 <TerminalBlock />
                 <h1 id="posts" className="text-3xl font-bold mb-4">Posts</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">

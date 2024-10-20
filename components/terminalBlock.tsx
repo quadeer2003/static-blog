@@ -220,7 +220,7 @@ const Home = () => {
     };
     return (
         <div className={font.className}>
-          <div className="relative flex items-center justify-center overflow-hidden">
+          <div className="relative flex items-center justify-center overflow-hidden ">
             {/* <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: "url('/bg-d.jpg')" }}
@@ -248,7 +248,7 @@ const Home = () => {
     
                   <div
                     ref={terminalRef}
-                    className="p-4 h-[370px] overflow-y-auto bg-gray-900 bg-opacity-90 rounded-b-lg"
+                    className="p-4 h-[370px] overflow-y-auto bg-black bg-opacity-90 rounded-b-lg"
                     onKeyDown={handleVimKeyDown}
                     tabIndex={0}
                   >
